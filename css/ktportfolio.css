@@ -225,6 +225,7 @@ fieldset[disabled] .btn-xl.active {
         font-size: 1.5em;
     }
 }
+@media (min-device-width: 600px) {
 header {
     background-image: url('../img/portfolio/Bg/DeathValley5.jpg');
     background-color: #333;
@@ -239,6 +240,24 @@ header {
     color: white;
     min-height: 100%;
 }
+}
+@media (min-device-width : 320px) and (max-device-width : 600px) {
+header {
+    background-image: url('../img/portfolio/Bg/DeathValley5.jpg');
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-attachment: scroll;;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: white;
+    min-height: 100%;
+}
+}
+
 header .intro-text {
     padding-top: 300px;
     padding-bottom: 200px;
@@ -517,6 +536,12 @@ section h3.section-subheading {
         text-align: left;
         /*padding: 0 30px 20px 20px;*/
     }
+    .timeline-marker{
+        left: 50%;
+        /*position: relative;*/
+        margin-left: -44px;
+        /*color:white;*/
+    }
 }
 @media (min-width: 992px) {
     .timeline > li {
@@ -558,6 +583,14 @@ section h3.section-subheading {
         /*padding: 0 100px 20px 20px;*/
     }
 }
+
+.timeline-marker{
+        /*left: 50%;*/
+        position: relative;
+        /*margin-left: -44px;*/
+        color:white;
+    }
+    
 .team-member {
     text-align: center;
     margin-bottom: 50px;
@@ -951,29 +984,24 @@ a:hover {
     height:250px !important;
     /*width: 300px !important;*/
 }
-.timeline-marker{
-    left: 50%;
-    position: relative;
-    margin-left: -44px;
-    color:white;
-}
+    
 
-.list-modal p {
-    margin-bottom: 0;
-        list-style: disc outside none;
-    display: list-item;
-    /*font-size:17px;*/
-        margin-left: 20px;
-}
-.list-modal{
-    margin-bottom: 20px;
-}
+    .list-modal p {
+        margin-bottom: 0;
+            list-style: disc outside none;
+        display: list-item;
+        font-size:17px;
+            margin-left: 20px;
+    }
+    .list-modal{
+        margin-bottom: 20px;
+    }
 
-.modal-body p {
-    text-align: left;
-    font-size: 17px;
-    font-weight: 700;
-}
+    .modal-body p {
+        text-align: left;
+        font-size: 17px;
+        font-weight: 700;
+    }
 
 .modal-body p a {
     color: blue

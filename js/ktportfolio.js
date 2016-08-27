@@ -43,7 +43,7 @@
         offset: {
             top: 100
         }
-    })
+    });
     
     $('.phone-content').slick({
   infinite: true,
