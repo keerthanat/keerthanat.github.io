@@ -1018,6 +1018,10 @@ a:hover {
 .modal-body span{
     padding-bottom: 10px;
 }
+
+.navbar-brand{
+    font-weight: bold;
+}
 /*.sample-content img{
      height:407px !important;
     width: 600px;
