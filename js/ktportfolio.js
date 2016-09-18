@@ -49,13 +49,12 @@
     });
 
     $('.resume-btn').bind('click', function(event) {
-//        var $anchor = $(this);
-        var project = "View_PDF_Resume";
         ga('send', {
             hitType: 'event',
-            eventCategory: 'Resume',
+            eventCategory: 'View_PDF_Resume',
             eventAction: 'click',
-            eventLabel: project
+            eventLabel: $(this).attr('href'),
+            transport: 'beacon'
         });
     });
 
