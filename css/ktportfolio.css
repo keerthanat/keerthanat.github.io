@@ -1022,6 +1022,18 @@ a:hover {
 .navbar-brand{
     font-weight: bold;
 }
+
+p.text-muted{
+    font-size: 17px;
+}
+.resume-btn{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 50px;
+        color: #1abc9c;
+    /*color:blue;*/
+    text-decoration: underline;
+}
 /*.sample-content img{
      height:407px !important;
     width: 600px;

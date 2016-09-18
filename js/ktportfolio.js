@@ -10,8 +10,8 @@
 //        });
 //    }
 //    });
-    
-    
+
+
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
@@ -24,7 +24,7 @@
     });
 //    $('.portfolio-item').animateCss('fadeInUp');
 //    $('.timeline-image').animateCss('bounceInDown');
-    
+
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
@@ -32,11 +32,35 @@
     });
 
     // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function(){ 
-            $('.navbar-toggle:visible').click();
+    $('.navbar-collapse ul li a').click(function() {
+        $('.navbar-toggle:visible').click();
     });
-    
-    
+
+    $('a.portfolio-link').bind('click', function(event) {
+//        var $anchor = $(this);
+        var project = $(this).attr('href');
+        project = project.replace("#", "");
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Portfolio',
+            eventAction: 'click',
+            eventLabel: project
+        });
+    });
+
+    $('.resume-btn').bind('click', function(event) {
+//        var $anchor = $(this);
+        var project = "View_PDF_Resume";
+        ga('send', {
+            hitType: 'event',
+            eventCategory: 'Resume',
+            eventAction: 'click',
+            eventLabel: project
+        });
+    });
+
+
+
 //    new WOW().init();
     // Offset for Main Navigation
     $('#mainNav').affix({
@@ -44,27 +68,27 @@
             top: 100
         }
     });
-    
-    $('.phone-content').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay:true,
-  fade:true
-});
 
-  $('.watch-content').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay:true,
-  fade:true
-});
-$('.sample-content').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay:true
+    $('.phone-content').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        fade: true
+    });
+
+    $('.watch-content').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        fade: true
+    });
+    $('.sample-content').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true
 //  fade:true
-});
+    });
 })(jQuery); // End of use strict
