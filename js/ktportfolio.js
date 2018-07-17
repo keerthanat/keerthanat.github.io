@@ -14,6 +14,16 @@
 
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
+
+    
+    setTimeout(function() {
+        if($("html, body").scrollTop() == 0){
+            $("html, body").animate({ scrollTop: 600 }, 2000);
+        }
+    }, 2000);
+
+
+
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({

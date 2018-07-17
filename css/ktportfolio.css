@@ -8,7 +8,7 @@ body {
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .text-muted {
-    color: rgba(26, 188, 156, 0.67) !important;
+    color: rgba(3, 235, 189, 0.88) !important;
 }
 .text-primary {
     color: #11bd9b;
@@ -178,7 +178,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .nav li a {
     font-family: "Assistant", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 1px;
     color: white;
 }
@@ -426,7 +426,7 @@ section h3.section-subheading {
 .timeline > li .timeline-panel {
     width: 100%;
     float: right;
-    padding: 0 20px 0 80px;
+    padding: 0 20px 0 100px;
     position: relative;
     text-align: left;
 }
@@ -463,7 +463,7 @@ section h3.section-subheading {
 .timeline > li.timeline-inverted > .timeline-panel {
     float: right;
     text-align: left;
-    padding: 0 20px 0 80px;
+    padding: 0 20px 0 100px;
 }
 .timeline > li.timeline-inverted > .timeline-panel:before {
     border-left-width: 0;
@@ -501,29 +501,31 @@ section h3.section-subheading {
 .timeline .timeline-body > p,
 .timeline .timeline-body > ul , .portfolio-panel p {
     margin-bottom: 0;
-        list-style: disc outside none;
+    list-style: disc outside none;
     display: list-item;
     font-size:17px;
-        margin-left: 20px;
+    margin-left: 20px;
+    font-weight: 900;
 }
+
 @media (min-width: 768px) {
     .timeline:before {
-        left: 50%;
+        left: 20%;
     }
     .timeline > li {
         margin-bottom: 20px;
         min-height: 100px;
     }
     .timeline > li .timeline-panel {
-        width: 41%;
+        width: 100%;
         float: left;
-        /*padding: 0 20px 20px 30px;*/
         text-align: left;
+        padding: 0 30px 20px 30%;
     }
     .timeline > li .timeline-image {
         width: 100px;
         height: 100px;
-        left: 50%;
+        left: 20%;
         margin-left: -50px;
     }
     .timeline > li .timeline-image h4 {
@@ -534,10 +536,10 @@ section h3.section-subheading {
     .timeline > li.timeline-inverted > .timeline-panel {
         float: right;
         text-align: left;
-        /*padding: 0 30px 20px 20px;*/
+        padding: 0 30px 20px 30%;
     }
     .timeline-marker{
-        left: 50%;
+        left: 20%;
         /*position: relative;*/
         margin-left: -44px;
         /*color:white;*/
@@ -583,6 +585,8 @@ section h3.section-subheading {
         /*padding: 0 100px 20px 20px;*/
     }
 }
+
+
 
 .timeline-marker{
         /*left: 50%;*/
@@ -818,7 +822,7 @@ body {
 }
 .affix-top{
     /*display: none;*/
-    opacity: 0;
+    /*opacity: 0;*/
 }
 
 /* Icon */
